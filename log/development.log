@@ -2725,3 +2725,2239 @@ Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.2ms)
   [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:36:13 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (38.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (497.9ms)
+Completed 200 OK in 1364ms (Views: 1039.7ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 17:36:17 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (38.2ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:39:38 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 156ms (Views: 152.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 17:39:47 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+LoadError (Unable to autoload constant SessionsController, expected /home/ubuntu/workspace/HW4/app/controllers/concerns/sessions_controller.rb to define it):
+  activesupport (4.2.1) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:44:00 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 17:44:02 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+LoadError (Unable to autoload constant SessionsController, expected /home/ubuntu/workspace/HW4/app/controllers/sessions_controller.rb to define it):
+  activesupport (4.2.1) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:45:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 17:45:26 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:46:36 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1" for 173.24.171.30 at 2015-10-03 17:46:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (37.6ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 139ms (Views: 59.7ms | ActiveRecord: 37.6ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 17:46:57 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:47:59 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 17:48:01 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 17:48:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 19:58:02 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (285.2ms)
+Completed 200 OK in 897ms (Views: 844.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 19:58:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 352ms (Views: 349.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 19:58:35 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sOxQUAx0boId+nHpRmd8RfXVXp5pBEZbg3NRTNr9mCOEei2qC9yybnyC4GcoP6B5CDNUX8w2n01yYLryBSBjZQ==", "user"=>{"user_id"=>"morgan", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "morgan"]]
+  [1m[36m (3.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("user_id", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", "morgan"], ["email", "ty@aol.com"], ["created_at", "2015-10-03 19:58:36.162588"], ["updated_at", "2015-10-03 19:58:36.162588"]]
+  [1m[36m (22.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 727ms (ActiveRecord: 45.7ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 19:58:36 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (18.4ms)
+Completed 200 OK in 472ms (Views: 459.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-03 19:58:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-03 19:58:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-03 19:58:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-03 19:58:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:13:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 98ms (Views: 89.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:13:53 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:13:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c3dQlTXzgPdl4NP/kGQLg5KQmpB+V50AmkH7mljVADpH4S1vMltcGwSYQnH+PNe/b3aQUdtlRBZrUhAkhwj7fA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XwfwlgKlR6IYYiOR9wKZOgx5CKIiXN1Plx7AZxHRMzN6mI4X6JJ8ukZGQAphNZYFdfu4y27qmPPT5C/Q5q/ig==", "user"=>{"user_id"=>"morgan", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "morgan"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-03 20:14:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:17:13 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:17:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h+vho9qeHiQVJEi3s0KN+yIOo/dP8ieJQYmZQQvLf7CzfZxZ3TbCyHRc2TndGlHH3+ipNurA/p+wmnL/1BaE9g==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:17:22 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:18:58 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:19:09 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1iWsoZliE1SVK9DsIjNJr8cL1R4FYRSWgBmR7/XaMv3zutIgc1UoTMsPs3e0BEaQvolld0nXUSrE435YAqTjQ==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.9ms)
+
+NameError (undefined local variable or method `user_id' for #<SessionsController:0x007f3e15390e68>):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:19:57 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 1424ms (Views: 1420.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:20:00 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:20:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZYGu6eFUKadx//X3/tmL+4uS4UIO48jg7jRvKGB2gztRF9MT5vz1SxCHZHmQgVfHdnTrg6vREfYfJ4SWv6t4fQ==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `null' for #<SessionsController:0x007f3e16087360>):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.4ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:20:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:20:45 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:20:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVTxrzfY5Ht+GZl35MGRfqzofRQGSJ1FupqaMv1/2z2FwoxVMHA4lx9hCPmKmU1CUQ531aN6RFNLiXGMIqIgew==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:20:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:20:59 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:21:09 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qr/Vgw0DFLQkbDzbxlxW59RYosGG7nbTmiR6Ban/sZp2Kah5CqvIWEUUrVWoBIrbKb6oACPcr8VrN5G7diJK3A==", "user"=>{"user_id"=>"ty", "email"=>"alkdfha;k"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:21:09 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:21:17 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 20:21:19 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 20:21:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PHecCT9J88tUqRx3nacj0wSM+K4KhQ3E4rkVDF/2BuoI4eHzOOEvJzXRjfnz///v+Wryb6+31NITqv6ygCv9rA==", "user"=>{"user_id"=>"MorganMaiers", "email"=>"doesnt matter"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "MorganMaiers"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("user_id", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", "MorganMaiers"], ["email", "doesnt matter"], ["created_at", "2015-10-03 20:21:40.214766"], ["updated_at", "2015-10-03 20:21:40.214766"]]
+  [1m[35m (20.7ms)[0m  commit transaction
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 27ms (ActiveRecord: 21.5ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:21:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:21:55 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XctMd2arTE2xm46lbDJ8V0wnIVA//rFCjTSK2jqnL5ppXTGNYQOQodDjHysCaqBrscErkZrMaFR8J2Fk5XrU3A==", "user"=>{"user_id"=>"MorganMaiers", "email"=>"doesnt matter"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "MorganMaiers"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:21:56 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/1" for 173.24.171.30 at 2015-10-03 20:22:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:22:10 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/4" for 173.24.171.30 at 2015-10-03 20:22:32 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/4/edit" for 173.24.171.30 at 2015-10-03 20:22:36 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered movies/edit.html.haml within layouts/application (115.7ms)
+Completed 200 OK in 147ms (Views: 145.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:22:39 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:26:30 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:26:37 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZT2DzJBUn712FYJK3Ykf6YEpjplWzSk9zhClTS3CLXpRq/42l/xDURdtE8Sz0cPVfM+EWPP/8Cs/A07z8h/WPA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x007f3e14f633b8>):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:30:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:30:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:30:11 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/NtKfKuMvpoDgD16LFGp1Vxw5uEZR+pJBvv0xoVfCwbITTeGrCRidmL4rPRCCXXpoZbsILx1M1/36B94WoLwQA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:31:53 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 20:31:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 20:32:00 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QujNhaqdr4NHUe/IjJA5EH5kRTe8FTqdr7qmrK1pxjJ2frB/rTVzbyYpfkbiyOUsg4JP9hkn44teqU0ScrQ9dA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 20:32:00 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:55:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (Inconsistent indentation: 5 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    15:         #warning.message= flash[:warning]
+    16:         
+    17:       -if	!@current_user						
+    18: 					= button_to 'Sign up/Login', login_path,:method => :get	
+    19:       -else 
+    20:           = button_to 'Logout', logout_path,:method => :get	
+    21: 						#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+  app/views/layouts/application.html.haml:18
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.7ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:55:40 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (Inconsistent indentation: 4 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    15:         #warning.message= flash[:warning]
+    16:         
+    17:       -if	!@current_user						
+    18: 				= button_to 'Sign up/Login', login_path,:method => :get	
+    19:       -else 
+    20:         = button_to 'Logout', logout_path,:method => :get	
+    21: 				#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+  app/views/layouts/application.html.haml:18
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.8ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:56:16 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (Inconsistent indentation: "\t\t\t  " used for indentation, but the rest of the document was indented using 2 spaces.):
+    14:       - elsif flash[:warning]
+    15:         #warning.message= flash[:warning]
+    16:       -if	!@current_user						
+    17: 			  = button_to 'Sign up/Login', login_path,:method => :get	
+    18:       -else 
+    19:         = button_to 'Logout', logout_path,:method => :get	
+    20: 				#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+  app/views/layouts/application.html.haml:17
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:57:16 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (Inconsistent indentation: "\t\t\t  " used for indentation, but the rest of the document was indented using 2 spaces.):
+    14:       - elsif flash[:warning]
+    15:         #warning.message= flash[:warning]
+    16:       -if	!@current_user						
+    17: 			  = button_to 'Sign up/Login', login_path,:method => :get	
+    18:       -else 
+    19:         = button_to 'Logout', logout_path,:method => :get	
+    20: 				#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+  app/views/layouts/application.html.haml:17
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:57:19 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Inconsistent indentation: "\t\t\t  " used for indentation, but the rest of the document was indented using 2 spaces.):
+    14:       - elsif flash[:warning]
+    15:         #warning.message= flash[:warning]
+    16:       -if	!@current_user						
+    17: 			  = button_to 'Sign up/Login', login_path,:method => :get	
+    18:       -else 
+    19:         = button_to 'Logout', logout_path,:method => :get	
+    20: 				#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+  app/views/layouts/application.html.haml:17
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.5ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:57:49 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Inconsistent indentation: 4 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    17:         = button_to 'Sign up/Login', login_path,:method => :get	
+    18:       -else 
+    19:         = button_to 'Logout', logout_path,:method => :get	
+    20: 				#CODE	HERE	TO	GENERATE	MESSAGE	(using	@current_user)	AND	LOGOUT	
+    21:       = yield
+  app/views/layouts/application.html.haml:20
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.9ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:58:08 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 21:58:10 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 21:58:18 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/4SaNHLq/jYSD45Ifm+G4cD9K5jj3RdzOReRcPKEJ27LEufOdUIi2nN3H8YQN1rdPRshWUbvzmXIBHrOLVncKA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:58:18 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 173.24.171.30 at 2015-10-03 21:58:22 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 21:58:34 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 21:58:39 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 21:58:44 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 21:58:46 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (21.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 22:52:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 22:52:08 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 22:52:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BNk0NbQ8Sps9rkANERgZVLD2aV6dgz+Hrg2hNU0pe50wT0nPs5SWd1zW0YN/QMVoTRBjnzix5pFfHkqLkvSA2w==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 22:52:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-03 22:52:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-03 22:52:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-03 22:52:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-03 22:52:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 22:52:28 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 22:52:29 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 22:52:36 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qiX5sPxrhWRs7p2MuxSbfS8RmGjWuQguK+Naqx+XKsies4RK+8NZiA2WDALVTEdB0veSqXOL0Tja8LEVwErRjg==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `create_user!' for #<Class:0x007f3e163a9480>):
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 22:53:10 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 22:53:12 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 22:53:14 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 22:53:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zvCyfonPB3whwz571QsX4ipWQ7cII1gUjUhbjJq4Dwn6Zs+EjmfbkEC7r/W7U8ve17BJdq0RgQJ8W7AyRWX0Tw==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `create_user!' for #<Class:0x007f3e16146e40>):
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.5ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 22:57:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 22:57:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 22:57:56 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 22:58:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VAhZjMbw2TJ1xC2pLOdBELrwPNDkxZWM16zUCBzD6LBgniR2wVgF3hS8vCdCv50sRxY2EUH3TJomvz+2wx4T9g==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.3ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: user_id):
+  app/models/user.rb:3:in `create_user!'
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 22:59:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 22:59:17 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 22:59:18 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 22:59:25 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FzSv7hE3IF8CdNanWStBm0ex7dah3JJ4Zcgboq36dGIjotIUFp/8s2MMRyk3c52nulfnFwTuS26U2/AcciePJA==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+ArgumentError (wrong number of arguments (3 for 0..1)):
+  app/models/user.rb:6:in `create_user!'
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.4ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 23:00:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:00:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 23:00:56 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 23:01:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oj01rIjkOLsS5Vpsj+B2Oaj50zZU75cdCwq7SR2gRB2Wq0hWj0zkV3Ody+LhuKoFVR/Z9/HdTgv6GVD3wn2/Ww==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-10-03 23:01:03.563974"], ["updated_at", "2015-10-03 23:01:03.563974"]]
+  [1m[35m (5005.5ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5017ms (ActiveRecord: 5006.8ms)
+
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: commit transaction):
+  app/models/user.rb:6:in `create_user!'
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.2ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 23:01:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:01:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 23:01:23 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Lvyb4d6xRjpMX29j1ZPb6PrX0fsO4C4AHUx6WUdwA/ULY+VgNIZ9IhJ7DPhDpNTXg1VhkkJWa7xZtpXusA7SQ==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-10-03 23:01:33.197088"], ["updated_at", "2015-10-03 23:01:33.197088"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 11ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-03 23:01:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 11]]
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:08:53 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 23:09:00 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeJWADOotK2cVBM4lzGEiMU0qRwZQEc/QOejwctLbC4RdCv6NABoQf0sgrb5aVi0ONKj3bxynimx9Eh/FJaXaA==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 23:10:08 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:10:10 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 23:10:11 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 23:10:17 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n9L69J+MG/PbCxcIwV7bAgUQ1LcG+sI8NhI7OdH1seurRIcOmCTHH7pzhoavBgc++PbedqPIGyrHAdCHDihKrQ==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:7:in `create_user!'
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 23:11:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:11:42 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 23:11:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 23:11:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F2k1m2/N/p9XuAZND+gnemlI2Yd23LfEvSZfvhsZtQQj/0hhaGUiczbAl8NhsPtGlK7TRtPubtJMNbQAxMROQg==", "user"=>{"user_id"=>"tyson", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tyson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("user_id", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", "tyson"], ["email", "ty@aol.com"], ["created_at", "2015-10-03 23:11:50.981968"], ["updated_at", "2015-10-03 23:11:50.981968"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 24ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:11:51 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 23:12:02 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z6cYGoUYDKq4osY4Llh7ehbPW+yMu39ZIuOuU5WCPRr7MWXggrDQRtnaV7ZAAKdG6ylRLSmJpk/T8EXtSl/GXA==", "user"=>{"user_id"=>"nick", "email"=>"ty"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "nick"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.7ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-03 23:13:21 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:13:22 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-03 23:13:28 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0vLEGSs2VvBZwmbDk/md7u9ZYqDvzB/n1Kg5MjrfRJvmZLnjLJ6KHDi69039oUHSEr9oYUr+xvElu9KM5QK/3Q==", "user"=>{"user_id"=>"nick", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "nick"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:13:28 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:15:56 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-03 23:20:16 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-03 23:20:18 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-03 23:20:26 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR0mdjiGeYmxQ2Km6YHoqU3nZjVNPbtLYxJXsjiE8bMRi1uMPy6lZdA78yiH2TSVsAFs9OgPYl2SAbwM51kK9Q==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:8:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:19:48 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (26.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (565.6ms)
+Completed 200 OK in 1825ms (Views: 1509.2ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:19:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (181.3ms)
+Completed 200 OK in 315ms (Views: 307.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:19:55 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (85.6ms)
+Completed 200 OK in 246ms (Views: 226.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:19:58 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 1834ms (Views: 1833.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:20:12 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeIZArvjqwEpa3iBsSyoF8iwdx1oMayZ+FMqNyETx0ItdGT4vEt37UgT6Q/fdHQrNVZ93M0DdY8JQMGJ/s48BA==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.8ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:8:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (27.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (21.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.1ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:24:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:24:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:24:09 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 04:24:55 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l0lawH8U/BPs1K8C4OH8vXEEG8/ArC12yTgb7FH9QGaj3yc6eLwg/42sPoyOuSCBjOIRDmWe9GA4K/BSjiC7IA==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:26:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:26:17 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:26:20 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:26:29 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"byaLw3hyKnCyPNbp+erPWyaZ8NdpDjcCJIWAjwvU6MVbsPY5f9r2nNNER2eXshNn23/6Fsw87hTVlmsx1AkTgw==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:8:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (138.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (172.6ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:33:49 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:33:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:33:55 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:34:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PjnDpIaeDqOgghjM+3W9Iv5v789hxM5nZYPgZMexxjYKr75egTbST8H6iUKVLWEeA4nlDsT2F3GUkAvaGGw9cA==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `params' for #<Class:0x007f3e158af7c8>):
+  app/models/user.rb:8:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.8ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:39:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:39:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:39:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:40:01 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t7UahL80d8aBzEv+nb08OnH6y/9Sird9eNUyojkmMPODI2d+uJyrKuC02nDz5eAGjBzBPve4bmuJxtkc5vvLtQ==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:7:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.7ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:41:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 53ms (Views: 48.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:41:45 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:41:47 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:41:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m8u2lAtMJm3ovGKrvAgrwQSabm3juaK1d/f858GUHXGvXctuDOT6gYnE8yXSUPf9+XxkrEaLe6OG5BdZHknmNw==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/models/user.rb:7:in `create_user!'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.3ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:48:57 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:48:59 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 04:49:01 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 04:49:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hrPurqrFYxfGnRiIB7qaNnugSiiHNAHKqtyDrGFi77eyJZNUrW2/+6fliQZp4kYKhkZA6SIG2Nxbz2gSvr8U8Q==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonm"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("user_id", "email", "session_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", "tysonm"], ["email", "ty@aol.com"], ["session_token", "I8RDRkwcJbTK1V+61ya+pA=="], ["created_at", "2015-10-04 04:49:07.207914"], ["updated_at", "2015-10-04 04:49:07.207914"]]
+  [1m[35m (24.9ms)[0m  commit transaction
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 55ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:49:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:49:44 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:49:51 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 04:49:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 04:50:01 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nsqLUef/2BxkQZXrsUh2av3Vjco2GwLU1R8Oj5+jGRKqXPar4FcE8AU5BGXfEKpWADOHC5Mp28IkDOUxQH7iVA==", "user"=>{"user_id"=>"tysonm", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "tysonm"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 04:50:02 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/1" for 173.24.171.30 at 2015-10-04 04:50:12 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:23:08 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (44.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (5.9ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (188.6ms)
+Completed 200 OK in 868ms (Views: 632.5ms | ActiveRecord: 50.2ms)
+
+
+Started GET "/logout" for 173.24.171.30 at 2015-10-04 16:23:12 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (65.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (26.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (624.4ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:26:19 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 130ms (Views: 126.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/logout" for 173.24.171.30 at 2015-10-04 16:26:23 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:26:58 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/home/ubuntu/workspace/HW4/app/views/layouts/application.html.haml:19: syntax error, unexpected '=', expecting ')'
+...'Logout', logout_path,:method =:delete
+...                               ^):
+  app/views/layouts/application.html.haml:19: syntax error, unexpected '=', expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:27:33 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "I8RDRkwcJbTK1V+61ya+pA=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 173.24.171.30 at 2015-10-04 16:27:37 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VV3qcCk8gx4tEPMpQpGxQEnN4SAlI0YEUd7Dd7xvCIlhy5eKLpRf8kxoYqcsyW18tCvr4YARnxKgzSjJY7Lzzw=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:27:37 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:38 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 16:27:44 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (20.2ms)
+Completed 200 OK in 298ms (Views: 281.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 16:27:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OVSFGB8IVKyatldAE/BnxnJ/2VP8QcBgzZTCMMSGEk0NwvjiGKCIQPvOxs59qLv6j5nTkllzGXY8hymOG1vpCw==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:27:53 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:27:54 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 16:28:04 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.24.171.30 at 2015-10-04 16:31:13 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.24.171.30 at 2015-10-04 16:31:23 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ds7+ha6wXPj/wANrrTWqlrpzi+0H4lJvdq/kDfXK6nhTUYAERIdn4KHkYPA7AqWpw/E7hEtUF9MyVQu6ArQ7w==", "user"=>{"user_id"=>"tysonmassey", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "tysonmassey"]]
+  [1m[36m (3.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_id", "email", "session_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", "tysonmassey"], ["email", "ty@aol.com"], ["session_token", "xdl61/5yNhjzU07rrKhjtA=="], ["created_at", "2015-10-04 16:31:23.409140"], ["updated_at", "2015-10-04 16:31:23.409140"]]
+  [1m[36m (22.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 68ms (ActiveRecord: 26.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 16:31:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:24 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B1tRBjfShAz+BGm6t3oGi4zphi0PMAhqV/HXnLaXIBEzzSz8MHpY4J98+DTZItq3cQ+M7KoC0Xym4jwiaUrbVw==", "user"=>{"user_id"=>"tysonmassey", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "tysonmassey"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "xdl61/5yNhjzU07rrKhjtA=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:43 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/logout" for 173.24.171.30 at 2015-10-04 16:31:51 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0flpZkcw1TQuH0smqWuczc2DxZ9uQj9F2uLrk/bgfjjlbxScQJgJ2E9n2qjHM0DxMGXPXstw5lMr8QAtKT2Ffg=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:31:51 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:31:52 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:33:39 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 16:33:41 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 16:33:49 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hda95u/I03eqPRg11kGi7jdbYayXFYAm2azZ/iI96hApQMAc6GAPm8tFibu4GX7Syr1rbTInWTAovzJA/eARVg==", "user"=>{"user_id"=>"tysonmassey", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonmassey"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:33:49 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "xdl61/5yNhjzU07rrKhjtA=="]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:33:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:33:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:33:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:33:50 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies/1" for 173.24.171.30 at 2015-10-04 16:34:03 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "xdl61/5yNhjzU07rrKhjtA=="]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 173.24.171.30 at 2015-10-04 16:34:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OWNdOaKEkIdcwRawNy8fk6iARycfPTpxyl6f8SHc8ioN9SDDpSxMaz25hz5Zd8OvVWZN5roP42c7TXRP/gEJbA=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:34:06 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:34:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:34:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:34:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:34:07 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.24.171.30 at 2015-10-04 16:36:53 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.24.171.30 at 2015-10-04 16:37:04 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UXcaMjsTb4sn1VztgjjHjJscGD8yhJEXVML+25CzAPll4WfIPLuzZ0atzWPsYBuwZvoS/pe2SAGl0RVlT277vw==", "user"=>{"user_id"=>"tysonmassey", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tysonmassey"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 33ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:37:04 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "xdl61/5yNhjzU07rrKhjtA=="]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 56ms (Views: 41.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:05 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/movies/1" for 173.24.171.30 at 2015-10-04 16:37:08 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "xdl61/5yNhjzU07rrKhjtA=="]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 173.24.171.30 at 2015-10-04 16:37:14 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bKWTU9SsmdyFaPa7NBgsuuy3wn0fPXzVYy7k4lB1A15YM+6p0wRFMOQQZzVaQPCGEVHIvLoPpcOSPQ9cj6j4GA=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.24.171.30 at 2015-10-04 16:37:14 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.24.171.30 at 2015-10-04 16:37:15 +0000
+Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36m (19.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (7.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (7.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (9.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mSQL (9.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mSQL (7.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mSQL (9.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (9.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (9.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mSQL (7.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mSQL (9.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 10]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mSQL (7.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mSQL (13.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 12]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
