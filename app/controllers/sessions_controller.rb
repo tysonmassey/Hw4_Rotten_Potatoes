@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
         current_user=User.find_by user_id: current_id
         if(current_user==nil)
             flash[:notice] = "Incorrect username or password"
+            flash[:class]= "flash_message"
             redirect_to login_path
         elsif(current_user.user_id==current_id&&current_user.email==current_email&&current_user!=nil)
             session[:session_token] = current_user.session_token
@@ -18,6 +19,7 @@ class SessionsController < ApplicationController
             redirect_to movies_path
         else
             flash[:notice] = "Incorrect username or password"
+            flash[:class]= "flash_message"
             redirect_to login_path
         end
     end

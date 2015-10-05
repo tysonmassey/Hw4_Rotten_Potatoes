@@ -21,6 +21,7 @@ before_filter :set_current_user
   def create
     @movie = Movie.create!(movie_params)
     flash[:notice] = "#{@movie.title} was successfully created."
+    flash[:class]= "flash_message"
     redirect_to movies_path
   end
 

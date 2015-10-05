@@ -4961,3 +4961,714 @@ Cannot render console from 173.24.171.30! Allowed networks: 127.0.0.1, ::1, 127.
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
   [1m[35mSQL (13.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 12]]
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 01:53:02 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (76.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (379.1ms)
+Completed 200 OK in 2272ms (Views: 2064.8ms | ActiveRecord: 76.3ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 01:53:11 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (70.9ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected =>, expecting :: or '[' or '.'
+..._true_false(( text_field,:id => "login_id", :user, 'user_id'
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+...( text_field,:id => "login_id", :user, 'user_id'
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected =>, expecting :: or '[' or '.'
+..._true_false(( text_field,:id => "login_email", :user, 'email'
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting ')'
+...ext_field,:id => "login_email", :user, 'email'
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:9: syntax error, unexpected =>, expecting :: or '[' or '.'
+..._true_false(( submit_tag,:id => "login_submit", 'Login to my...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:9: syntax error, unexpected ',', expecting ')'
+...bmit_tag,:id => "login_submit", 'Login to my account'
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+...lse_true_false(( link_to,:id => "signup", 'Sign up for an ac...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+...alse(( link_to,:id => "signup", 'Sign up for an account', ne...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+...nup", 'Sign up for an account', new_user_path
+...                               ^):
+  app/views/sessions/new.html.haml:4: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:9: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:9: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (53.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (159.1ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:01:07 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:01:09 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+...true_false(( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+...( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+...false_true_false(( text_field :user, 'email',:id => "login_e...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+...se(( text_field :user, 'email',:id => "login_email"
+...                               ^):
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:02:11 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:02:14 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+...true_false(( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+...( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+...false_true_false(( text_field :user, 'email',:id => "login_e...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+...se(( text_field :user, 'email',:id => "login_email"
+...                               ^):
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:02:32 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:02:34 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+...true_false(( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+...( text_field, :user, 'user_id',:id => "login_id"
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+...false_true_false(( text_field :user, 'email',:id => "login_e...
+...                               ^
+/home/ubuntu/workspace/HW4/app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+...se(( text_field :user, 'email',:id => "login_email"
+...                               ^):
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/sessions/new.html.haml:4: syntax error, unexpected ',', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ':', expecting ')'
+  app/views/sessions/new.html.haml:7: syntax error, unexpected ',', expecting :: or '[' or '.'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.2ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:03:02 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:03:04 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:03:14 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iI9bcEW3nyh33xVCyJnCCdAIgQyylm0gYTXcyCvzYDq8GSaKQh9DxBanhMymwR41Le6LzRektDaQJjd29C6bfA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iI9bcEW3nyh33xVCyJnCCdAIgQyylm0gYTXcyCvzYDq8GSaKQh9DxBanhMymwR41Le6LzRektDaQJjd29C6bfA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:19 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/new" for 173.26.160.231 at 2015-10-05 02:03:23 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 118ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.26.160.231 at 2015-10-05 02:03:32 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Um5k7VZE5TaDSJADa2D50LgkjA0JlpyXRqjouG9bXLBm+BkXUew52uIwAY0FOCXsRcKGzKykRYG3uwMGsIan9g==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+  [1m[36m (3.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_id", "email", "session_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", "ty"], ["email", "ty@aol.com"], ["session_token", "63HX1cmMfXg35rfhYm2Zww=="], ["created_at", "2015-10-05 02:03:32.772638"], ["updated_at", "2015-10-05 02:03:32.772638"]]
+  [1m[36m (22.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 50ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:03:33 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 116ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:33 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:33 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:33 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:33 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OPlo9dE1CEFcslz+r/did2guRLYX6fP2lM6mx1bfYPgMbxUP1p3UrT3KzXDBr75LlchOd7LbKuBl3U15iQKbvg==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.26.160.231 at 2015-10-05 02:03:45 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/logout" for 173.26.160.231 at 2015-10-05 02:22:05 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BpY0f9fFVTMK9UuXHeW32SjnrN/GCFXTT8VagHy5cbgyAEmF0G2J32uN2hlzvWvl1QGmHmM6jMW+1rE+o2SK/g=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:22:05 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (45.5ms)
+Completed 200 OK in 113ms (Views: 68.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 173.26.160.231 at 2015-10-05 02:22:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.26.160.231 at 2015-10-05 02:22:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 173.26.160.231 at 2015-10-05 02:22:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.26.160.231 at 2015-10-05 02:22:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:22:07 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:22:13 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FcRNgiHB8J1sf2MEGsOk/INqeAG79N5iTS6u+RmioTkhUjB4JmkscQ0H8op0m3jAfoxywB7GB3S8PUVHxn9afw==", "user"=>{"user_id"=>"Tom", "email"=>"t"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "Tom"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:22:13 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:22:22 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uvELghkxZzCyjvmwZmVPQN7z8G0yFyFCREn9tOdPXiKOZ3Z4Hpm73NP2aD4IPZN8IxX6rJcl+FS1WhYKOJKlZA==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:22:22 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/logout" for 173.26.160.231 at 2015-10-05 02:24:42 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W6RGNbIKlFTr764IMYQTVkXo05LcH/xXgbRefYt4UkhvMjvPtaJIuIqXP4Zf3M9quA7ZU3ktJUFwp7XDVKWpDg=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:24:42 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (40.7ms)
+Completed 200 OK in 145ms (Views: 134.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:24:43 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:24:49 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iugD+MQ+Cvc+xImBo8Ipkl86bclT6FiPL6Y52Tg+3m2+fn4Cw5bWG1+8GA/NmvWuotxnCPbagZnetdJn5+MlKw==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:24:50 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 173.26.160.231 at 2015-10-05 02:24:51 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wakbBhGpqa8+qbHjAX06Wfgtjf/Ew/xGJjz1NDiPhiL1P2b8FgF1Q1/RIG1vJeZlBcuHPmHxJVDXLx6K51J9ZA=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:24:51 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:24:53 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:24:58 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pEXeh0BLktjiTCB5FIorZf9yOqodCywhpKAzyZgJyyiQ06N9R+NONIM0sfd60vdZApQwa7g59TdVs9h3R9Qwbg==", "user"=>{"user_id"=>"ty", "email"=>"t"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `body' for #<SessionsController:0x007f3e15ad69c0>):
+  app/controllers/sessions_controller.rb:20:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.7ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:25:24 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:25:25 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:25:31 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wb6Nil2p/YHHWPMQzUMhD02pZhW6Tw57xE13jF4H+6NtKPBwWgEhbaYgYp6jG/0zsE9s1B991201XpwygdoA5Q==", "user"=>{"user_id"=>"ty", "email"=>"t"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:25:31 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:26:04 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:26:10 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VVtqIHmiHiaVlOdwW3Xp3QYjAXT6Vtjj4UDkWGGm1dlhzRfafgrCyvTsdv41LTXh+8ULtV9kAfUQUw/mvnsunw==", "user"=>{"user_id"=>"ty", "email"=>"t"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:26:10 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:27:07 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6QdRHbt0SrVOY925k521pjcMpAhWTpuWH278XZ2+d1jdkSznvNyWWS8bTDf9xWmayuquyfN8QoDufRfjQmOMHg==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:27:07 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies/1" for 173.26.160.231 at 2015-10-05 02:27:10 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 173.26.160.231 at 2015-10-05 02:27:11 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YNMPKnvT+H7Cg/nrwmbD/qFtjG+PX+HS1SQcUXlcpT1URXLQfHskkqP7aGWsPh/CXIuGriptOMQkN/fvpoFeew=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:27:11 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:27:12 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:27:25 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Eg+4EG4huYl1jaNw6yJkvbZpiYCgAv24y9/lPJCJaXE3kMaRhBaCkSupwOt9FWuCz+s56ey0uASPJQqLZ/e4w==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.co"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:27:25 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:32:52 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:32:53 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:32:59 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mtepaQ8HlB0eESzCexGzNDn7/Qj6aq0rahVinhfHm16uQdSTCK9I8X9pvUwVSW8IxB33yV9YdD2bBokgyBpgGA==", "user"=>{"user_id"=>"ty", "email"=>"t"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:32:59 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:33:04 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vp38dWVD+UP/qUnyWG2hLN0i6M3zHM4VKynuCZjyCcWKC4GPYuslr57R2Hw2NX0QIMTiDFYuFwPaOgW3Ry/ygw==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:33:04 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 173.26.160.231 at 2015-10-05 02:33:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R/xhMYELq/JiAikwzOK2wtrZNPkV3kFV94qObEhh0+BzahzLhqN3HgN6uL6iumr+Jz8+OLDsmEMGmWXSl7wopg=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:33:06 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:33:08 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:33:13 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ldQJbmy0YF3NMsPWows7LfZ+FxXZXZV4Hixtv2eGCXCwS3fvhoNbRZMWoE01PDQSj/ynfJXr0MRa1oIIkPjYw==", "user"=>{"user_id"=>"t", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "t"]]
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:33:13 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 173.26.160.231 at 2015-10-05 02:33:15 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 173.26.160.231 at 2015-10-05 02:33:27 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yy03Orn5zQGBtEvYA4/dFbD3cE23Lby2nEhpKQaFoBRXu0rAvlER7eDM2lZt1wEpTRF6jBIfZaBtW4KX2VhbUg==", "user"=>{"user_id"=>"tp", "email"=>"ty@aol.com"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tp"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("user_id", "email", "session_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", "tp"], ["email", "ty@aol.com"], ["session_token", "2qzv3SiwGZwToDgAtUmyOQ=="], ["created_at", "2015-10-05 02:33:27.713993"], ["updated_at", "2015-10-05 02:33:27.713993"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+Redirected to https://projectname-tysonmassey.c9.io/login
+Completed 302 Found in 13ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/login" for 173.26.160.231 at 2015-10-05 02:33:27 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 173.26.160.231 at 2015-10-05 02:33:39 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+fTVNOecsDWavXULRgs8vymiq8IRCwPqN3yBpaQth6bNYqjO4DRs2fvF5IUoU+CD1EShA7Q52vzGb2obe/B84A==", "user"=>{"user_id"=>"tp", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "tp"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 173.26.160.231 at 2015-10-05 02:33:39 +0000
+Cannot render console from 173.26.160.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "2qzv3SiwGZwToDgAtUmyOQ=="]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.6ms)

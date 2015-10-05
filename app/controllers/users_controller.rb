@@ -12,9 +12,11 @@ class UsersController < ApplicationController
    if((User.find_by user_id: params[:user][:user_id])==nil)
     @user = User.create_user!(params)
     flash[:notice] = "'Welcome #{@user.user_id}. Your account has been created"
+    flash[:class]= "flash_message"
     redirect_to login_path
    else
     flash[:notice] = "Sorry this user-id is already taken"
+    flash[:class]= "flash_message"
     redirect_to new_user_path
    end
    # puts params[:user_id]
