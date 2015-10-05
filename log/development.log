@@ -5749,3 +5749,68 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (2.6ms)[0m  SELECT "movies".* FROM "movies"
   Rendered movies/index.html.haml within layouts/application (14.6ms)
 Completed 200 OK in 189ms (Views: 175.8ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/logout" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5R+AodUCkiESO0Jgzz+31HekbZcMpRwwMBIyI+ePNa/Rif1b0qpOzXND0+6hZ2voikJnVqmXxSbBAdmdOFLO6Q=="}
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/default.self-49554e9e270baee081b10069c4f5f33b75f6549ad240aac134400c56d752bf9f.css?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 129.255.225.3 at 2015-10-05 17:03:37 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 129.255.225.3 at 2015-10-05 17:03:39 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 139ms (Views: 134.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 129.255.225.3 at 2015-10-05 17:03:50 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxPiTmBdsupe2T3Zy7C2Q3ggnREDecBqZ66CgH/H2RUfhZ+0Z/VuBj+hrFel6Gp/hcaX0KZLGXyWvWk+oBoiUw==", "user"=>{"user_id"=>"ty", "email"=>"ty@aol.com"}, "commit"=>"Login to my account"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "ty"]]
+Redirected to https://projectname-tysonmassey.c9.io/movies
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/movies" for 129.255.225.3 at 2015-10-05 17:03:50 +0000
+Cannot render console from 129.255.225.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "63HX1cmMfXg35rfhYm2Zww=="]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 137ms (Views: 130.9ms | ActiveRecord: 1.1ms)
